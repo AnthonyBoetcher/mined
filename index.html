@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MINED</title>
+        <meta name="description" content="Eco-friendly cubes with remarkable properties">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="icon" type="image" href="FAVICON.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <nav id="navbar"><img id="logo" src="/Mined/111 MINED FINAL.png"><a href=""><div>MDA1</div></a><a href="#GALLERY"><div>CONMAN1</div></a><a href="#gallery"><div>CONTECH2</div></a></nav>
+        </main>
+        <footer>&copy;Anthony Boetcher for MINED 2022</footer>
+    </body>
+</html>
+<style>
+  footer {
+          width: 200px;
+           height: 40px;
+           border: none;
+           color: white;
+           opacity: 1;
+           bottom: 0;
+           position: absolute; 
+           margin: 0 0 0 45vw;
+           font-family: 'MuseoModerno', cursive;
+           font-weight: 200;
+           font-size: 10px;
+  }
+  #logo{
+    height: 150px;
+    width: 210px;
+    top: 0;
+    margin: -180px 0 0 -30px;
+  }
+  #cubed{
+    height: 100px;
+    width: 100px;
+    top: 0;
+    margin: 20px 0 0 24px;
+  }
+a{text-decoration: none;
+width: 100%;
+color: rgb(155, 155, 255)}
+a:visited{text-decoration: none}
+#about p, #science-ystuff p, #progress p, #gallery p{
+    margin: 20px 20px 0 20px;
+}
+#myBtn , #myBtn1, #myBtn2, #myBtn3{
+    margin: 5px 0 0 20px;
+    background-image: linear-gradient(rgb(224, 209, 169),rgb(109, 34, 109));
+    color: black;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'MuseoModerno', cursive;
+}
+#myBtn:hover , #myBtn1:hover, #myBtn2:hover{
+  cursor: pointer;
+}
+    #more, #more1, #more2, #more3 {display: none;}
+#about, #science-ystuff, #progress, #gallery {
+        width: 75vw; 
+        height: fit-content; 
+        border: 1px solid white;
+        margin: 30px 5vw 0 175px;
+        color: white;
+        padding: 0 0 10px 0;
+        font-size: 20px;
+        line-height: 32px;
+    }
+    nav div {
+           width: 130px;
+           flex-shrink: 1;
+           height: fit-content;
+           border: none;
+           color: white;
+           -webkit-text-stroke: 1px black;
+           opacity: 1;
+           margin: 40px auto 0 auto;
+           font-family: 'MuseoModerno', cursive;
+           font-weight: 700;
+           font-size: 18px;
+           text-align: center;   
+           align-content: center;    
+           border: 1px solid white; 
+    }
+    nav div:hover {
+        cursor: pointer;
+    }
+    nav{
+        background-color: transparent;
+        width: 150px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        margin: 0 0 0 45vw;
+        background-color: transparent;
+    }
+ body {
+    background-color: black;
+    font-family: 'MuseoModerno', cursive;
+ }
+ main {
+    display: inline-block;
+    display: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0px 0 0 0px;
+ }
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(99, 175, 201);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(110, 154, 170);
+}
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+</style>
+<script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+
+    function myFunction1() {
+      var dots = document.getElementById("dots1");
+      var moreText = document.getElementById("more1");
+      var btnText = document.getElementById("myBtn1");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    
+    function myFunction2() {
+      var dots = document.getElementById("dots2");
+      var moreText = document.getElementById("more2");
+      var btnText = document.getElementById("myBtn2");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    var prevScrollpos = window.pageXOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageXOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.left = "0px";
+  } else {
+    document.getElementById("navbar").style.left = "0px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+    </script>
