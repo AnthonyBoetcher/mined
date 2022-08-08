@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
-      <nav id="navbar"><div><a target="_self" href="https://anthonyboetcher.github.io/mined/"><img id="logo" src="111 mined square logo.png"></a></div></nav>
+      <nav id="navbar"><div><a target="_blank" href="https://anthonyboetcher.github.io/mined/"><img id="logo" src="111 mined square logo.png"></a></div></nav>
         <main>
           <div class="tabs">
             <div class="tab">
@@ -47,18 +47,11 @@
             <div class="tab" >
               <input type="radio" id="tab-5" name="tab-group-1">
               <label for="tab-5" style="background-color:rgb(129, 223, 255)">ROOFING</label>
-                        <div class="content">
-                          <p>Stuff for Roofing </p><p>
-                            Hover to see measurement example of <span class="hiddentxt"><a style="color:red;" href="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg">wallplates</a></span>
-                            <span class="hiddenimg"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" width="250" /></span>
-  </p>
-  <p>
-    Hover/click to watch video example of measuring <span class="hiddentxt" onmouseover="vidPlay()" onmouseout="vidPause()"><a style="color:red;" href="https://mtc.cdn.vine.co/r/videos/ECBC329ACC1050514912117440512_1c6599f182f.4.6.16444000809832514200.mp4">wallplates</a></span>.
-    <span class="hiddenimg"><video id="video1" loop>
-      <source src="https://mtc.cdn.vine.co/r/videos/ECBC329ACC1050514912117440512_1c6599f182f.4.6.16444000809832514200.mp4" type="video/mp4">
-      </video></span>
-  </P>
-                          </p>
+                        <div class="content" id="roofing">
+                          <p id="keyreveal">Hover to reveal measurement of <span class="hiddentxt"><a style="color:red;" href="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg">wallplates</a></span>
+                            <span class="hiddenimg"><div id="wallplate"></div></span></p>
+                            <p id="keyreveal">Hover to reveal measurement of <span class="hiddentxt"><a style="color:red;" href="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg">tie beams and rafters</a></span>
+                              <span class="hiddenimg1"><div id="tiebeamrafter"></div></span></p>
                       </div>
              </div>
         </main>
@@ -66,8 +59,38 @@
     <footer>&copy;Anthony Boetcher for MINED 2022</footer>
 </html>
 <style>
+  #wallplate #tiebeamrafter{
+    opacity: 0;
+  }
   .hiddenimg {
     display: none;
+    width: 655px; 
+    margin: 90px 0 0 570px;
+    height: 185px; 
+    border-top: 5px solid rgba(0, 255, 0, 0.5);
+    border-left: 5px solid rgba(0, 255, 0, 0.5);
+    border-bottom: 5px solid rgba(0, 255, 0, 0.5);
+    opacity: 1;
+  }
+  #keyreveal {
+    color: white; 
+  }
+  #roofing {
+    height: 2500px;
+    width: 2500px;
+    background-image: url('/Mined/MDA/mda\ roof\ tiled\ 2.png');
+    background-repeat: no-repeat;
+    background-size: 1500px 1000px;
+  }
+  .hiddenimg {
+    display: none;
+    width: 655px; 
+    margin: 90px 0 0 570px;
+    height: 185px; 
+    border-top: 5px solid rgba(0, 255, 0, 0.5);
+    border-left: 5px solid rgba(0, 255, 0, 0.5);
+    border-bottom: 5px solid rgba(0, 255, 0, 0.5);
+    opacity: 1;
   }
   .hiddentxt {
     font-weight: bold;
@@ -104,8 +127,8 @@
   }
   .tabs {
     position: relative;
-    height: 95vh;
-    width: 70vw;
+    height: 600vh;
+    width: 1500px;
     min-height: 200px; /* This part sucks */
     clear: both;
     margin: 25px 0 0 -60px;
@@ -135,15 +158,15 @@ opacity: 1;
   .content {
     position: absolute;
     top: 70px;
-    height: 1000px;
+    height: 400vh;
     left: 30px;
     background: white;
     color: black;
     right: 0;
     bottom: 0;
     padding: 20px;
-    border: 1px solid #ccc;
-    overflow: hidden;
+    border: none;
+    overflow: scroll;
   }
   .content > * {
     opacity: 0;
